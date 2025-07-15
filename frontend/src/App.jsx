@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 import LoginPopup from "./Components/LoginPopup/LoginPopup.jsx";
 import Verify from "./pages/Verify/Verify.jsx";
 import MyOrders from "./pages/MyOrders/MyOrders.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy.jsx";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
       <div className="app">
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
