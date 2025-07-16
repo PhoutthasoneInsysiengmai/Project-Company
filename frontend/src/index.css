@@ -21,7 +21,6 @@ a {
   margin: auto;
   width: 80%;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;

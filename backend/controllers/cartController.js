@@ -52,7 +52,7 @@ const removeFromCart = async (req, res) => {
 // ✅ Get user cart data
 const getCart = async (req, res) => {
     try {
-        const userData = await userModel.findById(req.body.userId); // ✅ แก้ตรงนี้
+        const userData = await userModel.findById(req.body.userId);
 
         if (!userData) {
             return res.status(404).json({ success: false, message: "User not found" });

@@ -49,4 +49,4 @@ const MyOrders = () => {
         </div>
     )
 }
-export default MyOrders
+export default MyOrders;

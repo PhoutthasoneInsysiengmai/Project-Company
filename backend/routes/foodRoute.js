@@ -9,7 +9,7 @@ const storage = multer.diskStorage({
     destination: "./uploads/",
     filename: (req, file, cb) => {
         const filename = `${Date.now()}-${file.originalname}`;
-        file.filename = filename; // บรรทัดสำคัญ
+        file.filename = filename;
         cb(null, filename);
     }
 });

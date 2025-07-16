@@ -65,4 +65,4 @@ const LoginPopup = ({ setShowLogin }) => {
         </div>
     )
 }
-export default LoginPopup
+export default LoginPopup;

@@ -4,7 +4,7 @@ import authMiddleware from '../middleware/auth.js';
 
 const cartRouter = express.Router();
 
-// ✅ เพิ่ม middleware ตรงนี้
+
 cartRouter.post("/add", authMiddleware, addToCart);
 cartRouter.post("/remove", authMiddleware, removeFromCart);
 cartRouter.post("/get", authMiddleware, getCart);

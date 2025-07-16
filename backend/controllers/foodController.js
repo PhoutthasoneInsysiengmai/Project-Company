@@ -36,7 +36,7 @@ const listFood = async (req, res) => {
         res.json({ success: false, message: "ERROR" })
     }
 }
-// remove food item
+// remove food items
 const removeFood = async (req, res) => {
     try {
         const food = await foodModel.findById(req.body.id);

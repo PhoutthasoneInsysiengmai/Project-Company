@@ -6,6 +6,7 @@ import userRouter from "./routes/userRoutes.js";
 import 'dotenv/config.js'
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
+import adminRouter from './routes/adminRoute.js';
 
 
 // app config 
@@ -18,6 +19,10 @@ app.use(cors())
 
 // db connection
 connectDB();
+
+// Admin panel
+app.use("/api/admin", adminRouter);
+
 
 // api endpoints
 app.use("/api/food", foodRouter)
